@@ -1,0 +1,12 @@
+První nápad:
+použití slov jako kernelu pro korelaci -> zjištění nejvyššího peaku, který by měl odpovídat pozici slova
+po prohlédnutí grafů a zkoušce vynásobit signály vyšlé z konvoluce a korelace si myslím že tento postup nemá moc perspektivu
+
+zkusil jsem rozdělit signál na slova a provést korelaci s každým z vygenerovaných slov a korelaci vyhodnocovat podle velikosti peaku
+nebo energie - neúspěch, úspěšnost se pohybovala od 0 do 10%
+byl na originálním signále použit nějaký filtr? vzorkování je sice stejné ale obsahuje méně frekvencí
+
+výsledek fourierovy transformace je "roztaženější" přitom vzorkování by mělo být stejné, zkusím ji "smrsknout"
+
+roztaženější fourierova transformace (výskyt více frekvencí) byla nejspíš kvůli použitému hlasu při generování
+po více pokusech s různými hlasy je to lepší
